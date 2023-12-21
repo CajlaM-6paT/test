@@ -148,14 +148,14 @@ entries.forEach((entry) => {
 
 }
 
-// обратите внимание на значение опции threshold
+
 const options = {
 threshold: 0.55
 }
 
 const observer = new IntersectionObserver(changeNav, options);
 
-// передаём все секции в обсервер
+
 const sections = document.querySelectorAll('.section');
 sections.forEach((section) => {
 observer.observe(section);
@@ -172,7 +172,7 @@ function shuffle(array) {
 	let currentIndex = array.length,  randomIndex;
 	while (currentIndex > 0) {
   
-	  // Pick a remaining element.
+	  
 	  randomIndex = Math.floor(Math.random() * currentIndex);
 	  currentIndex--;
 
